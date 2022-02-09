@@ -6,5 +6,4 @@ for linea in f:
     a = linea.strip().split()
     cantPalabras += len(a)
 
-print(cantPalabras)
-
+print("Cantidad de Palabras del archivo datos.txt es %d" % cantPalabras)
