@@ -1,9 +1,12 @@
 #!/usr/bin/python3
 
+import sys
+
+archivo = sys.argv[1]
 cantPalabras = 0
-f = open('datos.txt','r')
+f = open(archivo)
 for linea in f:
     a = linea.strip().split()
     cantPalabras += len(a)
 
-print("Cantidad de Palabras del archivo datos.txt es %d" % cantPalabras)
+print("Cantidad de palabras del archivo %s es %d" % (archivo,cantPalabras))
